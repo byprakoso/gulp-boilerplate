@@ -1,0 +1,20 @@
+.social {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include min-responsive($mntablet) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__item {
+        margin: 0 20px;
+        font-size: 18px;
+        @include min-responsive($mntablet) {
+            margin: 0 25px 10px;
+        }
+    }
+
+    &__icon {}
+}

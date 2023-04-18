@@ -1,0 +1,25 @@
+$font_title: 'd-din', sans-serif;
+$font_body: 'd-din', sans-serif;
+$font_body_bold: 'd-din bold', sans-serif;
+$font_footer: 'Roboto', sans-serif;
+
+$cl_orange: #ed503e;
+$cl_white: #e6e9e0;
+$cl_black: #231f20;
+$cl_yellow: #ffcc10;
+$cl_blue: #13315b;
+
+$cl_primary: $cl_orange;
+$cl_secondary: $cl_white;
+$cl_tertiary: $cl_black;
+
+$grid_desktop: 640px;
+$grid_desktop_large: 1100px;
+$grid_mobile: 100%;
+
+// break tablet
+$xsphone: 320px; 
+$mntablet: 768px; 
+$mdtablet: 992px; 
+$mxtablet: 1100px;
+$lgtablet: 1440px;

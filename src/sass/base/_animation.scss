@@ -1,0 +1,19 @@
+@keyframes backdrop {
+    0%   {background-color: black;}
+    50%  {background-color: grey;}
+    100% {background-color: black;}
+}
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }

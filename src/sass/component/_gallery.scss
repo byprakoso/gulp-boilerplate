@@ -1,0 +1,16 @@
+.gallery{
+    position: relative;
+    margin: 65px 0;
+    iframe{
+        height: 10.2rem;
+            @include min-responsive(321px) {
+                height: 12.2rem;
+            }
+            @include min-responsive($mntablet) {
+                height: 26rem;
+            }
+            @include min-responsive($mxtablet) {
+                height: 35.3rem;
+            }
+    }
+}

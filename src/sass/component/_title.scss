@@ -1,0 +1,17 @@
+.title{
+    &__stripe{
+        position: relative;
+        padding: 10px 0;
+        text-align: center;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            width: 50px;
+            height: 2px;
+            background: $cl_orange;
+            transform: translateX(-50%);
+        }
+    }
+}

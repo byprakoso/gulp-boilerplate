@@ -1,0 +1,52 @@
+.footer {
+    background: $cl_black;
+
+    &__wrapper {
+        color: $cl_white;
+        padding: 50px 0;
+    }
+
+    &__menu {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            margin: 10px 17px;
+            @include min-responsive($mntablet) {
+                margin: 10px;
+            }
+        }
+    }
+
+    &__logo {
+        margin: 25px;
+
+        @include min-responsive($mntablet) {
+            margin: 0;
+        }
+    }
+
+    &__icon {
+        display: block;
+        text-align: center;
+        width: 70px;
+        margin: 10px auto 20px;
+        
+        &--small{
+            width: 30px;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__social {
+        @include min-responsive($mntablet) {
+            padding-right: 70px;
+            padding-top: 10px;
+        }
+    }
+}

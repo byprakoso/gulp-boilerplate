@@ -1,0 +1,41 @@
+//base
+@import 'base/animation';
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/mixin';
+@import 'base/global';
+
+//Plugins
+@import "plugins/my-grid"; 
+@import "plugins/pure-grid"; 
+@import "plugins/slick";
+@import "plugins/slick-theme";
+@import "plugins/slick-custom";
+// @import "plugins/fullpage"; 
+
+//Main layout 
+@import "layout/header";  
+@import "layout/content"; 
+@import "layout/cover"; 
+@import "layout/team"; 
+@import "layout/jobs"; 
+@import "layout/faq"; 
+@import "layout/contact"; 
+@import "layout/footer"; 
+
+//Component
+@import "component/preloader"; 
+@import "component/pjtabs"; 
+@import "component/social"; 
+@import "component/portofolio"; 
+@import "component/progtabs"; 
+@import "component/pjslider"; 
+@import "component/card"; 
+@import "component/clients"; 
+@import "component/awards"; 
+@import "component/credits"; 
+@import "component/gallery"; 
+@import "component/bts"; 
+@import "component/programs"; 
+@import "component/title"; 
+@import "component/button"; 

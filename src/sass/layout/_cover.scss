@@ -1,0 +1,170 @@
+.cover {
+    height: 100vh;
+    background-color: $cl_white;
+
+    &--fixed {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    &--invert {
+        background-color: $cl_black;
+
+        .title__stripe {
+            color: white;
+        }
+    }
+
+    &--contact {
+        height: auto;
+
+        @include min-responsive($mntablet) {
+            height: 100vh;
+        }
+    }
+
+    &__intro {
+        position: relative;
+        margin: 10px 0;
+
+        @include min-responsive($mntablet) {
+            margin: 65px 0;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        @include min-responsive($mntablet) {
+            width: 385px;
+        }
+    }
+
+    &__item {
+        position: absolute;
+
+        &--top {
+            display: block;
+            background: url('../images/Animated-Logo-Pijaru.gif') no-repeat;
+            background-color: $cl_white;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: 250px;
+
+            // animation-name: cf3FadeInOut;
+            // animation-timing-function: ease-in-out;
+            // animation-iteration-count: infinite;
+            // animation-duration: 2s;
+            // animation-direction: alternate;
+            @include min-responsive($mntablet) {
+                width: 385px;
+            }
+        }
+    }
+
+    // &__img{
+    //     animation: fadeOut 1s infinite;
+    // }
+    // &__caption{
+    //     animation: fadeIn 1s infinite;
+    // }
+    &__down {
+        position: absolute;
+        text-align: center;
+        top: calc(100vh - 100px);
+        left: calc(50% - 43px/2);
+        z-index: 4;
+        cursor: pointer;
+
+        @include max-responsive($xsphone) {
+            top: calc(100vh - 80px);
+        }
+    }
+
+    &__icon {
+        border: 1px solid $cl_black;
+        border-radius: 50%;
+        padding: 7px;
+
+        &--white {
+            border: 2px solid $cl_white;
+            color: $cl_white;
+        }
+    }
+
+    &__caption {
+        font-family: $font_body_bold;
+        font-size: 16px;
+        color: $cl_orange;
+        margin-bottom: 30px;
+        line-height: 1.2;
+        padding: 0 20px;
+
+        @include min-responsive($mntablet) {
+            font-size: 25px;
+        }
+
+        // &--small{
+        //     @include min-responsive($mntablet){
+        //         font-size: 16px;
+        //     }
+        // }
+    }
+
+    &__desc {
+        font-family: $font_body;
+        font-size: 16px;
+        color: $cl_black;
+        line-height: 1.2;
+
+        @include min-responsive($mntablet) {
+            font-size: 18px;
+        }
+    }
+
+    &.no-height {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    &__inl {
+        display: flex;
+        transform: translateX(10px);
+        @include min-responsive($mntablet) {
+            transform: translateX(0px);
+        }
+        &ine {
+            &--right {
+                @include min-responsive($xsphone) {
+                    transform: translateY(-1.15em);
+                }
+                
+                @include min-responsive($mntablet) {
+                    transform: translateY(-1.65em);
+                }
+
+                @include max-responsive($xsphone) {
+                    transform: translateY(-.85em);
+                }
+            }
+        }
+    }
+    &__video{
+        background-size: cover;
+    object-fit: cover;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    }
+}

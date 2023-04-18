@@ -1,0 +1,94 @@
+// default transisi
+@mixin base_transition($t) {
+	-webkit-transition: $t .2s ease;
+	-moz-transition: $t .2s ease;
+	-ms-transition: $t .2s ease;
+	-o-transition: $t .2s ease;
+	transition: $t .2s ease;
+}
+
+
+@mixin next_transition($t) {
+	-webkit-transition: $t ease-in-out;
+	-moz-transition: $t ease-in-out;
+	-ms-transition: $t ease-in-out;
+	-o-transition: $t ease-in-out;
+	transition: $t ease-in-out;
+}
+
+@mixin skew($t) {
+	-moz-transform: skewX($t);
+	-webkit-transform: skewX($t);
+	-o-transform: skewX($t);
+	-ms-transform: skewX($t);
+	transform: skewX($t);
+}
+// border radius
+@mixin border_radius($x) {
+	-webkit-border-radius: $x;
+	-moz-border-radius: $x;
+	-ms-border-radius: $x;
+	-o-border-radius: $x;
+	border-radius: $x;
+}
+// skala
+@mixin base_scale($x) {
+    -ms-transform: scale($x); /* IE 9 */
+    -webkit-transform: scale($x); /* Safari */
+    transform: scale($x);
+}
+
+// translate
+@mixin ontranslate($x,$y) {
+	-moz-transform: translate($x,$y);
+	-webkit-transform: translate($x,$y);
+	-o-transform: translate($x,$y);
+	-ms-transform: translate($x,$y);
+	transform: translate($x,$y);
+
+}
+
+
+// reset style ul
+@mixin reset_ul {
+	margin: 0;
+	padding: 0;
+}
+// 100%
+@mixin display_full {
+	width: 100%;
+	height: 100%;
+}
+// untuk overflow judul pada list berita
+@mixin title_overflow($height, $max-height) {
+	height: $height;
+	max-height: $max-height;
+	overflow: hidden;
+}
+// media
+@mixin max-responsive ($media) {
+  @media (max-width: $media) { @content; }
+}
+@mixin min-responsive ($media) {
+  @media (min-width: $media) { @content; }
+}
+@mixin range-responsive ($media, $media2) {
+  @media (min-width: $media) and (max-width: $media2) { @content; }
+}
+
+@mixin transition($t) {
+	-webkit-transition: $t ease-in-out;
+	-moz-transition: $t ease-in-out;
+	-ms-transition: $t ease-in-out;
+	-o-transition: $t ease-in-out;
+	transition: $t ease-in-out;
+}
+
+// font template
+@mixin font-pack($family: false, $size: false, $weight: false,  $lh: false, $colour: false) {
+    @if $family { font-family: $family; }
+    @if $size { font-size: $size; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+    @if $colour { color: $colour; }
+}

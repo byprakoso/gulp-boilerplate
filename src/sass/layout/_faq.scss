@@ -1,0 +1,38 @@
+.faq {
+    &__list {
+        color: $cl_white;
+        padding-left: 1em;
+        margin-top: 50px;
+    }
+
+    &__question {
+        cursor: pointer;
+        font-size: 18px;
+        font-family: $font_body_bold;
+        line-height: 2em;
+        position: relative;
+        color: $cl_orange;
+        &::after{
+            content: '\002B';
+            position: absolute;
+            color: $cl_white;
+            top: 0;
+            left: -16px;
+            font-size: 20px;
+            color: $cl_orange;
+        }
+        &.active{
+            &::after{
+                content: '\2212';
+                color: $cl_orange;
+            }
+        }
+    }
+    
+    &__answer {
+        margin-left: 0;
+        padding: 1em 0;
+        line-height: 1.5;
+        display: none;
+    }
+}

@@ -1,2 +1,2 @@
 # gulp-boilerplate
-This repo contain the file that I use when creating static web project
+This repo contain the files that I use when creating static web project
